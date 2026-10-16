@@ -1,0 +1,20 @@
+var HordeLogin={submit:function()
+{if($('horde_user')&&!$F('horde_user')){alert(HordeLogin.user_error);$('horde_user').focus();}else if($('horde_pass')&&!$F('horde_pass')){alert(HordeLogin.pass_error);$('horde_pass').focus();}else{$('login-button').disable();$('login_post').setValue(1);$('horde_login').submit();}},selectLang:function()
+{if((!$('horde_user')||!$F('horde_user'))&&(!$('horde_pass')||!$F('horde_pass'))){var params={new_lang:$F('new_lang')};self.location='login.php?'+Object.toQueryString(params);}},loginButton:function(e)
+{if(e.isRightClick()){return;}
+if(!e.element().readAttribute('disabled')){this.submit();}
+e.stop();},keypressPassword:function(e)
+{var kc=e.keyCode||e.charCode;if(((kc>=65&kc<=90)&&!e.shiftKey)||((kc>=97&kc<=122)&&e.shiftKey)){$('horde-login-pass-capslock').show();}else{$('horde-login-pass-capslock').hide();}},_removeHash:function(h)
+{return(Object.isString(h)&&h.startsWith("#"))?h.substring(1):h;},onDomLoad:function()
+{var s=$('horde_select_view');if(location.hash){$('anchor_string').setValue(this._removeHash(location.hash));}
+if($('horde_user')&&!$F('horde_user')){$('horde_user').focus();}else if($('horde_pass')&&!$F('horde_pass')){$('horde_pass').focus();}else{$('login-button').focus();}
+if(s){s.down('option[value=mobile_nojs]').remove();if(this.pre_sel){s.selectedIndex=s.down('option[value='+this.pre_sel+']').index;}
+$('horde_select_view_div').show();}}};document.observe('dom:loaded',HordeLogin.onDomLoad.bind(HordeLogin));document.on('change','#new_lang',HordeLogin.selectLang.bind(HordeLogin));document.on('click','#login-button',HordeLogin.loginButton.bind(HordeLogin));document.on('keypress','#horde_pass',HordeLogin.keypressPassword.bind(HordeLogin));var AccessKeys={macos:navigator.appVersion.indexOf("Mac")!=-1,keydownHandler:function(e)
+{var elt,elts,evt,key,href;if((this.macos&&e.ctrlKey)||(!this.macos&&e.altKey&&!e.ctrlKey)){key=String.fromCharCode(e.keyCode||e.charCode).sub('"','\\"');elts=$$('[accesskey="'+key.toUpperCase()+'"]');if(key.toUpperCase()!=key.toLowerCase()){elts=elts.concat($$('[accesskey="'+key.toLowerCase()+'"]'));}
+if((elt=elts.first())){if(elts.size()>1){elts.slice(1).invoke('writeAttribute','accesskey',null);}
+e.stop();if(Prototype.Browser.Opera&&elt.tagName=='LABEL'){elt=$(elt.readAttribute('for'));if(!elt){return;}}
+try{elt.focus();}catch(ex){}
+if(navigator.userAgent.indexOf('Chrome/')>-1&&!this.macos&&elt.tagName=='A'){return;}
+if(elt.tagName=='INPUT'){}else if(elt.match('A')&&elt.onclick){elt.onclick();}else if(elt.match('A')&&Prototype.Browser.IE&&(href=elt.readAttribute('href'))&&href.substr(0,1)!='#'){if(href.indexOf('javascript:')===0){eval(href.substr(11));}else{window.open(href);}}else if(document.createEvent){evt=document.createEvent('MouseEvents');evt.initMouseEvent('click',true,true,window,0,0,0,0,0,false,false,false,false,0,null);elt.dispatchEvent(evt);}else{evt=document.createEventObject();elt.fireEvent('onclick',evt);}}}}};document.observe('keydown',AccessKeys.keydownHandler.bindAsEventListener(AccessKeys));
+// @source: https://webmail.uni-jena.de/js/login.js
+// @source: https://webmail.uni-jena.de/js/accesskeys.js
