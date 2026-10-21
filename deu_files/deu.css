@@ -1,0 +1,77 @@
+BODY.ic {
+        FONT-SIZE: 11px; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #eaeaea; FONT-VARIANT: normal
+}
+TD.ic {
+        FONT: 10px Verdana; TEXT-INDENT: 10px; BORDER-BOTTOM: #ffd097 1px solid; HEIGHT: 30px; BACKGROUND-COLOR: #fff4e8
+}
+TH.ic {
+        FONT: bold 11px Verdana; COLOR: #ff5833; TEXT-INDENT: 10px; BORDER-BOTTOM: #ffa500 double; HEIGHT: 30px; BACKGROUND-COLOR: #ffe4c4
+}
+H2 {
+        FONT-SIZE: 12px; COLOR: #003399; FONT-STYLE: normal; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+EM {
+        FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: Verdana; FONT-VARIANT: normal
+}
+P.Baslik {
+        FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff0033; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana; LETTER-SPACING: 2px
+}
+P {
+        FONT-SIZE: 11px; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana
+}
+A {
+        FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #003399; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A:visited {
+        FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #003399; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A:unknown {
+        FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #003399; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ff6600; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+BODY {
+        SCROLLBAR-FACE-COLOR: #ffe1c4; FONT-SIZE: 11px; SCROLLBAR-TRACK-COLOR: white; FONT-FAMILY: Verdana; SCROLLBAR-DARKSHADOW-COLOR: #ff9900; SCROLLBAR-BASE-COLOR: white; BACKGROUND-COLOR: white
+}
+UL {
+        FONT-SIZE: 11px; LIST-STYLE-IMAGE: url('/images/square.gif'); FONT-STYLE: normal; FONT-FAMILY: Verdana
+}
+TABLE {
+        FONT-SIZE: 11px; FONT-STYLE: normal; FONT-FAMILY: Verdana; HEIGHT: 12px
+}
+A.alt {
+        FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: white; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.alt:visited {
+        FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: white; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.alt:unknown {
+        FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffa500; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.alt:hover {
+        FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+P.alt {
+        FONT-SIZE: 11px; COLOR: white; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana
+}
+INPUT {
+        BORDER-RIGHT: #AABED2 1px solid; BORDER-TOP: #AABED2 1px solid; FONT-WEIGHT: normal; BORDER-LEFT: #AABED2 1px solid; BORDER-BOTTOM: #AABED2 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: white
+}
+
+.inputozel {
+        BORDER-RIGHT: orangered 1px solid; BORDER-TOP: orangered 1px solid; FONT-WEIGHT: normal; BORDER-LEFT: orangered 1px solid; BORDER-BOTTOM: orangered 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: white
+}
+
+SELECT {
+        BORDER-RIGHT: orangered 1px solid; BORDER-TOP: orangered 1px solid; FONT-WEIGHT: normal; BORDER-LEFT: orangered 1px solid; BORDER-BOTTOM: orangered 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: white
+}
+OPTION {
+        BORDER-RIGHT: orangered 1px solid; BORDER-TOP: orangered 1px solid; FONT-WEIGHT: normal; BORDER-LEFT: orangered 1px solid; BORDER-BOTTOM: orangered 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: white
+}
+.inputclass {
+        BORDER-RIGHT: orangered 1px solid; BORDER-TOP: orangered 1px solid; FONT-WEIGHT: normal; BORDER-LEFT: orangered 1px solid; BORDER-BOTTOM: orangered 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: white
+}
+
+.borderalt {  border: #AABED2; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.borderall {  border: #AABED2; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
